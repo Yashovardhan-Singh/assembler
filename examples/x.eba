@@ -1,0 +1,17 @@
+$store
+    STR A B
+    STR 69 B
+$load
+    LDR B
+    LDR 69
+$add
+    ADD A B
+    ADD 0 C
+$sub
+    SUB 1 C
+    SUB B C
+$do
+    JEQ store
+    JLT load
+    JGT add
+    JNE do
